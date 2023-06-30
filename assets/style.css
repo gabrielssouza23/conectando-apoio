@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --main-header-color: #75AD86;
+    --btn-queroAjudar-color: #529868;
+    --btn-precisoAjuda-color: #FF7070;
+    --main-footer-color: #EDE4D8;
+
+}
+
+*/ {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+li {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgba(237,228,216,1);
+  color: rgba(48, 48, 48, 1);
+  font-family: Lato;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.teste {
+  text-decoration: none;
+  color: rgba(48, 48, 48, 1);
+  font-family: Lato;
+  font-style: italic;
+}
+
+.quero_ajudar {
+  /*display: flex;*/
+  min-width: 50px;
+  padding: 16px 8px;
+  /*align-items: flex-start;*/
+  gap: 8px;
+  border-radius: 12px;
+  background-color: var(--main-header-color) ;
+  font-size: 20px;
+  font-family: Lato;
+  font-style: normal;
+  color: rgba(48, 48, 48, 1);
+}
+
+.quero_ajuda {
+  /*display: flex;*/
+  min-width: 50px;
+  padding: 16px 8px;
+  /*align-items: flex-start;*/
+  gap: 8px;
+  border-radius: 12px;
+  background-color: #FF7070 ;
+  font-size: 20px;
+  font-family: Lato;
+  font-style: normal;
+  color: rgba(48, 48, 48, 1);
+}
+
+main{
+ background-image: url("./img/background_image_desktopbackgroundHome.png");
+}
+
