@@ -6,66 +6,111 @@
     --btn-precisoAjuda-color: #FF7070;
     --main-footer-color: #EDE4D8;
 
+    --black: #303030;
 }
 
-*/ {
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
-html {
-  height: 100%;
+/* HEADER */
+.header{
+  display: flex;
+  width: 100vw;
+  height: 5.625rem;
+  border-radius: 0rem 0rem 3.75rem 3.75rem;
+  background: var(--verde-80, #75AD86);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+  
+}
+.header__navBar{
+  display: flex;
   width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  margin: 0 4.5rem 0 4.5rem;
 }
 
-li {
-  text-decoration: none;
+.header__navBar__logo{
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
 }
 
-body {
-  background-color: rgba(237,228,216,1);
-  color: rgba(48, 48, 48, 1);
+.navBar__buttons .btns__links{
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 2rem 0 2.04rem 0;
+  
+}
+
+.btns__links li a{
+  color: var(--black);
+  text-align: center;
+  
+  /* H3 */
+  font-size: 1.6rem;
   font-family: Lato;
   font-style: italic;
-  text-decoration: none;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.teste {
-  text-decoration: none;
-  color: rgba(48, 48, 48, 1);
-  font-family: Lato;
-  font-style: italic;
+
+
+/*footer*/
+
+.footer{
+  display: flex;
+  width: 100vw;
+  padding: 3.5rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: var(--main-footer-color);
 }
 
-.quero_ajudar {
-  /*display: flex;*/
-  min-width: 50px;
-  padding: 16px 8px;
-  /*align-items: flex-start;*/
-  gap: 8px;
-  border-radius: 12px;
-  background-color: var(--main-header-color) ;
-  font-size: 20px;
-  font-family: Lato;
-  font-style: normal;
-  color: rgba(48, 48, 48, 1);
-}
+.footer__list #about{
+  color: var(--black);
 
-.quero_ajuda {
-  /*display: flex;*/
-  min-width: 50px;
-  padding: 16px 8px;
-  /*align-items: flex-start;*/
-  gap: 8px;
-  border-radius: 12px;
-  background-color: #FF7070 ;
-  font-size: 20px;
+  /* H5 */
+  font-size: 1.375rem;
   font-family: Lato;
   font-style: normal;
-  color: rgba(48, 48, 48, 1);
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: underline;
 }
 
-main{
- background-image: url("./img/background_image_desktopbackgroundHome.png");
+.footer__list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+
+
+  /* H5 */
+  font-size: 1.375rem;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.footer__list a{
+  color: var(--black);
+
+}
+
+.footer .footer__logo{
+  justify-self: flex-end;
 }
 
